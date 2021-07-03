@@ -24,3 +24,8 @@ public static boolean isUnique(String input) {
 
 	return true;
 }
+
+/*
+Time Complexity: O(n2)
+Space Complexity: O(1)
+*/
