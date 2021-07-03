@@ -1,0 +1,26 @@
+/*
+Question: Is Unique: Implement an algorithm to determine if a string has all unique characters. What if you
+cannot use additional data structures?
+*/
+
+/*
+Examples:
+Halo : true
+Hello: false
+null : true
+empty : true
+*/
+
+public static boolean isUnique(String input) {
+	if(input == null) return true;
+
+	for(int i=0; i<input.length(); i++) {
+		for(int j=i+1; j<input.length(); j++) {
+			if(input.charAt(i) == input.chatAt(j)) {
+				return false;
+			}
+		}
+	}
+
+	return true;
+}
